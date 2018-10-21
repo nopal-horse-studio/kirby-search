@@ -1,0 +1,102 @@
+.btn {
+	display: inline-block;
+	background: none;
+	border: 0;
+	line-height: 1em;
+	cursor: pointer;
+	outline: none;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+}
+
+.btn-rounded {
+	@include text-bold;
+	color: $color-primary;
+	border-radius: 5em;
+	border: 2px solid $color-primary;
+	padding: 0.8rem 1.5em;
+	@extend .box-shadow-large;
+	@include transition(0.3s);
+	&:hover{
+		color: white;
+		background-color: $color-primary;
+		@include transition(0.3s);
+	}
+	&:focus{
+		color: white;
+		background-color: $color-primary;
+		@include transition(0.3s);
+	}
+}
+
+.btn-negative {
+	border-color: $color-error;
+	color: $color-error;
+	@include transition(0.3s);
+	&:hover{
+		color: white;
+		background-color: $color-error;
+		@include transition(0.3s);
+	}
+	&:focus{
+		color: white;
+		background-color: $color-error;
+		@include transition(0.3s);
+	}
+}
+
+.btn-positive {
+	border-color: $color-success;
+	color: $color-success;
+	&:hover{
+		color: white;
+		background-color: $color-success;
+		@include transition(0.3s);
+	}
+	&:focus{
+		color: white;
+		background-color: $color-success;
+		@include transition(0.3s);
+	}
+}
+
+.btn-with-icon {
+	color: #777;
+	white-space: nowrap;
+	body.ltr & {
+		text-align: left;
+	}
+	body.rtl & {
+		text-align: right;
+	}
+	&:hover{
+		color: #000;
+	}
+	&:focus{
+		color: #000;
+	}
+}
+
+.btn-with-icon .icon {
+	color: $color-icons;
+}
+
+.btn-addit i {
+	line-height: 0;
+}
+
+.btn-wide {
+	min-width: 10em;
+}
+
+.btn-disabled {
+	opacity: .25;
+	pointer-events: none;
+}

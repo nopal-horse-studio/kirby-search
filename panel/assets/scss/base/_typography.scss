@@ -1,0 +1,41 @@
+* {
+	font-size: 100%;
+	@include text;
+}
+
+body{
+	@include text;
+	color: $color-text;
+}
+
+a{
+	color: $color-text;
+	text-decoration: none;
+	@include transition(0.3s);
+	&:hover{
+		color: $color-primary;
+		@include transition(0.3s);
+	}
+}
+
+.light {
+	@include text-light;
+}
+
+b,
+strong,
+.strong {
+	@include text-bold;
+}
+
+.marginalia {
+	color: #777;
+}
+
+hr {
+	display: block;
+	height: 2px;
+	background:  $color-divider;
+	border: 0;
+}
+
