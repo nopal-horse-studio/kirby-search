@@ -1,2 +1,2 @@
-# kirby-search
-Kirby search
+# Kirby Search
+Kirby search.
