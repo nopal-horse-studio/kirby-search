@@ -15,6 +15,7 @@ content/*
 site/*
 !/site/config/
 !/site/cache/
+!/site/controllers/
 
 # = IMAGES
 # ----------------------------------------------------------------------
